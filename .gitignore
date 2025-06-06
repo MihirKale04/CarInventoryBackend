@@ -1,0 +1,16 @@
+# Node.js
+node_modules/
+npm-debug.log
+.env                  # <--- CRUCIAL: Do NOT commit your .env file with credentials!
+*.log
+pids
+logs
+*.pid
+*.seed
+*.log.gz
+.npm/
+.node-gyp/
+.nyc_output/
+package-lock.json     # Or yarn.lock, pnpm-lock.yaml etc.
+# macOS
+.DS_Store
