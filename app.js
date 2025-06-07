@@ -95,7 +95,6 @@ app.post('/cars', async (req, res) => {
 
     // Basic validation
     if (!make || !model_name || !year || !price) {
-        console.log("%s %s %d %d", make, model_name, year, price)
         return res.status(400).json({ error: 'make, model_name, year, and price are required.'  });
     }
     if (isNaN(year) || isNaN(price)) {
