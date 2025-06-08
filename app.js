@@ -1,11 +1,10 @@
 // app.js
 
 require('dotenv').config(); // Load environment variables from .env file
-
 const express = require('express');
 const sql = require('mssql'); // SQL Server driver
-
 const app = express();
+
 const port = process.env.PORT || 3000; // API will run on port 3000 (or specified in .env)
 
 // Middleware to parse JSON request bodies
